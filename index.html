@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Hunt</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script src="script.js"></script>
+    <header>
+        <h1 id="h1">RECIPE HUNT</h1>
+        <h3 id="h3">Destination for all licious dishes😋</h3>
+    </header>
+    <main>
+        <input type="text" id="search_box" placeholder="Enter dish name📝">
+        <h3 id="err-msg"></h3>
+        <button id="submit_btn" onclick="fetchData()">Search</button>
+        <div id="loader" style="display:none;">Loading...</div>
+        <div id="disp">
+            <h5 id="dish"></h5>
+            <div id="image"></div>
+            <ul id="list">
+                <li id="area">Area: </li>
+                <li id="category">Category: </li>
+            </ul>
+            <div id="ingredients">
+                
+            </div>
+            <p id="inst"></p>
+            <a id="link"></a>
+        </div>
+    </main>
+    
+</body>
+</html>

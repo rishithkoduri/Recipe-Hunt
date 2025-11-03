@@ -1,0 +1,130 @@
+body{
+    background-color: hsl(208, 22%, 85%);
+    background-image: url("background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover ;
+    height: 100vh;
+    background-attachment: fixed;
+    /* text-align: center; */
+}
+#loader{
+    /* To-do add loader animation */
+    display: flex;
+    justify-content: center;
+    border: 3px dotted black;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+}
+@keyframes glow {
+    0%{
+        color: hsl(0, 60%, 40%);
+        background-color: hsla(208, 31%, 57%, 0.628);
+        border: 5px solid hsla(295, 81%, 20%, 0.911);
+    }
+    100%{
+        color: hsl(0, 60%, 70%);
+        background-color: hsla(208, 31%, 27%, 0.628);
+        border: 5px solid hsla(293, 4%, 57%, 0.911);
+    }
+}
+#h1 {
+    color: hsl(0, 60%, 40%);
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    font-size: 60px;
+    text-shadow: 5px 2px 5px rgba(13, 13, 13, 0.642) ;
+    background-color: hsla(208, 31%, 57%, 0.628);
+    padding: 20px;
+    margin: 35px 20px 20px 20px;
+    border-radius: 20px;
+    border: 5px solid hsla(295, 81%, 20%, 0.911);
+    animation: glow infinite 3s ease-in 3s infinite;
+    
+}
+#h3{
+    display: flex;
+    justify-content: center;
+    color: hsl(9, 67%, 41%);
+    font-size: 30px;
+    text-shadow: 1px 1px 1px rgba(13, 13, 90, 0.642) ;
+}
+#search_box{
+    font-size: 40px;
+    display: block;
+    margin: auto;
+    text-align: center;
+    background-color: hsla(34, 78%, 75%, 0.541);
+    padding: 5px;
+    border: 3px dotted hsl(13, 50%, 39%);
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+#submit_btn{
+    padding: 10px 20px;
+    display: block;
+    margin: auto;
+    background-color: hsla(14, 100%, 43%, 0.852);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor:pointer;
+    margin-bottom: 15px;
+}
+#submit_btn:hover {
+    font-size: 16px;
+    background-color: hsl(14, 100%, 35%);
+}
+#disp{
+    display: none;
+    border: 1px solid hsl(0, 84%, 41%);
+    background-color: hsla(50, 55%, 71%, 0.824);
+    padding: 2px 2px 2px 2px;
+    border-radius: 10px;
+    margin: auto;
+    width: 50rem;
+}
+#ingredients{
+    display: flex;
+    justify-content: left;
+    font-weight: bolder;
+    font-size: 20px;
+    color: hsl(0, 61%, 43%);
+}
+#list{
+    font-size: 20px;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 10px;
+    background-color: #fff8ee;
+    border: 2px solid hsl(13, 60%, 40%);
+}
+  
+th, td {
+    border: 1px solid #c77a4b;
+    padding: 8px 12px;
+    text-align: left;
+}
+  
+th {
+    background-color: hsl(13, 80%, 60%);
+    color: white;
+}
+#err-msg{
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    color: hsla(0, 95%, 41%, 0.897);
+    padding: 2px 2px 2px 2px;
+    animation: glow 2s infinite ease-in-out;
+}
+  
