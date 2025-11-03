@@ -12,10 +12,10 @@ body{
     /* To-do add loader animation */
     display: flex;
     justify-content: center;
-    border: 3px dotted black;
+    /* border: 3px dotted black;
     border-radius: 50%;
     height: 50px;
-    width: 50px;
+    width: 50px; */
 }
 @keyframes glow {
     0%{
